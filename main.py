@@ -28,7 +28,7 @@ def main():
       fg='black' 
    )
    status_label.pack(pady=20)
-   github_url = "github.com"
+   github_url = "https://github.com/Progress-ux/AntiAfk.git"
 
    def open_github_url(event):
       webbrowser.open_new(github_url)
