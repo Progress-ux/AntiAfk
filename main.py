@@ -1,3 +1,5 @@
+import os
+import sys
 from tkinter import *
 from tkinter import ttk
 from bober_lob import Bober
@@ -7,7 +9,14 @@ def main():
    root = Tk()    
    root.title("BoberLob")     
    root.geometry("250x300")    
-   root.iconbitmap("./BoberLobIco.ico")
+   
+   if getattr(sys, 'frozen', False):
+      application_path = sys._MEIPASS
+   elif __file__:
+      application_path = os.path.dirname(__file__)
+
+   iconFile = "BoberLobIco.ico"
+   root.iconbitmap(default=os.path.join(application_path, iconFile))
    root.resizable(False, False)
    root.configure(bg='grey')
 
