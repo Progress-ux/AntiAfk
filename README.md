@@ -26,3 +26,8 @@ pip install pyinstaller
 ```sh
 pyinstaller --onefile --noconsole --name BoberLob --icon "data//BoberLobIco.ico" --add-data "data//BoberLobIco.ico;." main.py
 ```
+
+### Possible commands to resolve errors
+```sh
+Set-ExecutionPolicy RemoteSigned
+```
