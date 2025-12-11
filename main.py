@@ -7,6 +7,7 @@ def main():
    root = Tk()    
    root.title("BoberLob")     
    root.geometry("250x300")    
+   root.iconbitmap("./BoberLobIco.ico")
    root.resizable(False, False)
    root.configure(bg='grey')
 
